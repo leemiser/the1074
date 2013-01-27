@@ -1,0 +1,143 @@
+/* Artfully masterminded by ZURB  */
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #f4f3ed;
+background: url(../img/concrete_wall_2.png) repeat;
+}
+
+/*BEBAS FONT FACE*/
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('../Bebas-fontfacekit/BEBAS___-webfont.eot');
+    src: url('../Bebas-fontfacekit/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Bebas-fontfacekit/BEBAS___-webfont.woff') format('woff'),
+         url('../Bebas-fontfacekit/BEBAS___-webfont.ttf') format('truetype'),
+         url('../Bebas-fontfacekit/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Start: Recommended Isotope styles */
+  /**** Isotope Filtering ****/
+  .isotope-item {
+  z-index: 2;
+  }
+  .isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+  }
+  /**** Isotope CSS3 transitions ****/
+  .isotope,
+  .isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  }
+  .isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+  }
+  .isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+  }
+  /**** disabling Isotope CSS3 transitions ****/
+  .isotope.no-transition,
+  .isotope.no-transition .isotope-item,
+  .isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  }
+  /* End: Recommended Isotope styles */
+  /* disable CSS transitions for containers with infinite scrolling*/
+  .isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  }
+    /* @end */
+
+
+/* !NAVIGATION STYLES */
+ #headerBackground {
+	  margin: 0 auto;  width: 100%; background:url("../img/nav_bg.png") repeat-x  ; height: 55px;
+   }
+
+ nav { margin: 0 auto; width: 225px; }
+ nav ul { margin: 0; padding: 0}
+ nav ul li { list-style: none;
+ 			padding: 0;
+ 			margin: 0;
+ 			float: left;
+ 			-moz-box-shadow: none;
+ 			-webkit-box-shadow: none;
+ 			box-shadow: none;
+ }
+
+  nav ul li a { width: 45px; height: 46px; box-shadow: none; text-decoration: none; opacity: 40%;}
+  #all {width: 45px; display: block; background:url("../img/all.png"); background-repeat: no-repeat; }
+  #web {width: 45px; display: block; background:url("../img/web.png"); background-repeat: no-repeat;}
+  #print {width: 45px; display: block; background:url("../img/print.png");background-repeat: no-repeat;}
+  #photo {width: 45px; display: block; background:url("../img/photo.png");background-repeat: no-repeat;}
+  #art {width: 45px; display: block; background:url("../img/art.png");background-repeat: no-repeat;}
+
+/* SIDEBAR STYLES */
+
+#logo {background-color: #484747; background: rgba(72,71,71,0.9);}
+#logo img { max-width: 100%; height: auto;}
+.sideDivider { width: 100%; float: left; display: block; background-color: #949494; background-color: rgba(127,127,127,0.7); height: 12px;   }
+#about p {font-size: .7em; padding: 0px 0px 0px 0px;}
+#about {padding: 10px 20px;}
+#about h3 {padding: 10px 10px;}
+#flickr { padding: 10px 20px; }
+    #flickrImages {
+	width:100%;
+	float:left:
+	position:relative;
+}
+
+   #flickrImages img {
+	border:/* px solid rgba(127,127,127,0.7) */;
+	margin:5px 5px 5px 5px;
+	width: 50px; height: 50px;
+
+	}
+
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

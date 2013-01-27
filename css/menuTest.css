@@ -1,0 +1,561 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #f4f3ed;
+background: url(../img/concrete_wall_2.png) repeat;
+}
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/*BEBAS FONT FACE*/
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('../Bebas-fontfacekit/BEBAS___-webfont.eot');
+    src: url('../Bebas-fontfacekit/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Bebas-fontfacekit/BEBAS___-webfont.woff') format('woff'),
+         url('../Bebas-fontfacekit/BEBAS___-webfont.ttf') format('truetype'),
+         url('../Bebas-fontfacekit/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* !PRIMARY STYLES */
+
+
+
+ /* Start: Recommended Isotope styles */
+  /**** Isotope Filtering ****/
+  .isotope-item {
+  z-index: 2;
+  }
+  .isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+  }
+  /**** Isotope CSS3 transitions ****/
+  .isotope,
+  .isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  }
+  .isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+  }
+  .isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+  }
+  /**** disabling Isotope CSS3 transitions ****/
+  .isotope.no-transition,
+  .isotope.no-transition .isotope-item,
+  .isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  }
+  /* End: Recommended Isotope styles */
+  /* disable CSS transitions for containers with infinite scrolling*/
+  .isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  }
+    /* @end */
+	#infoBox {
+		padding: 50px;
+	}
+
+   h3 {
+   	font-family: BebasRegular; font-size: 0.875em; color: #4a4a4a;
+   }
+   .wraper {
+   	margin: 0 auto; width: 90%;
+   }
+   header {
+   	width: 100%; margin: 0 auto;
+   }
+   #logo {
+	margin: 0 auto; width: 17.833333333333%; float: left; height: 223px;
+   	background-color: #484747;  max-width: 100%;
+   }
+   #headerBackground {
+	  margin: 0 auto; float: left; width: 100%; background:url("../img/nav_bg.gif") repeat-x #484747 ; height: 46px;
+   }
+   #logo img {
+   	max-width: 100%;
+   }
+   /* !QUOTES STYLES */
+   #quotes {
+   	width: 73.958333333333% ; height: 223px; float: right; padding: 0px 0px 0px 0px; margin-right: 5%;
+   }
+   #quotes h1 {
+   width: 100% ; display: block; font-family: BebasRegular;  /* font-size: 1.875% ; */ color: #f4f3ed; /* text-shadow: 1px 1px 2px #ffffff; */
+   	 margin-top: 40px; margin-bottom: 0; margin-left: 0px; padding: 0px 0px 0px 0px; text-align: left; background-color: none;
+   }
+   #slideshow {
+	  width: 100%; background-color: none; background: none; margin-left: 2%;
+   }
+
+   .cited {
+   	width:100%; font-family: BebasRegular; font-size: 1.0625em; color: #616161; background-color: none;
+   }
+   /* !NAVIGATION STYLES */
+ nav { margin: 0 auto; width: 400px; height: 46px;}
+ nav ul { margin: 0; padding: 0}
+ nav ul li {  margin: 0px 10px 0px 0px; padding: 0px 10px 0px 10px; height: 46px; list-style: none; display: block; float: left;
+
+
+ 			 }
+ nav ul li a { text-decoration: none; font-size: .8em; color: white; display: block; padding-top: 15px;  }
+
+
+
+   /* !CONTENT STYLES */
+
+   #mainContent {
+   	margin: 0px auto; padding: 0; width: 73.958333333333%; float: right;
+   }
+   #mainContent li { list-style: none;}
+   #gallery {
+   	margin: 0 auto;
+   }
+   #dividerContainer {
+	   margin: 0 auto; width: 100%; float: left;
+   }
+   .topDivider {
+	    margin-bottom: 10px; display: block; background-color: rgba(127,127,127,0.7); height: 12px; float: left; width: 17.833333333333%;
+   }
+   .topDivider-Right {
+	  margin: 0 auto; margin-top:10px; margin-bottom: 10px; /* margin-left: 2%; */ display: block; background-color: rgba(127,127,127,0.7); height: 2px; float: left; width: 100%;
+   }
+   #sidebar {
+   	margin: 0 auto; width: 17.833333333333%; float: left;
+
+   }
+   .sideDivider { display: block; background-color: rgba(127,127,127,0.7); height: 12px; float: left; width: 100%; }
+   #about p {
+   	font-size: .7em; padding: 0px 0px 0px 0px;
+   }
+   #about h3 {
+	    padding: 10px 10px;
+   }
+   #flickr { padding: 10px 10px; }
+    #flickrImages {
+	width:100%;
+	float:left:
+	position:relative;
+}
+
+   #flickrImages img {
+	border:/* px solid rgba(127,127,127,0.7) */;
+	margin:5px 5px 5px 5px;
+	width: 50px; height: 50px;
+
+	}
+
+   ul.container {
+   	margin: 0 auto; width: 100%;
+   }
+    #container li img {
+
+   }
+   #container li {
+
+   	list-style: none outside none;
+   	position: relative;
+   	margin-right:15px ;margin-bottom:15px ;
+   	-moz-box-shadow: 0 0 5px #000;
+   	-webkit-box-shadow: 0 0 5px #000;
+   	box-shadow: 0 0 5px #000;
+   }
+
+
+
+
+   /* !media queries ======================================================
+      EXAMPLE Media Query for Responsive Design.
+      This example overrides the primary ('mobile first') styles
+      Modify as content requires.
+      ========================================================================== */
+
+
+
+	/* !Desktops and laptops ----------- */
+	@media only screen
+	and (min-width : 1224px) {
+		#logo {
+			margin: 0 auto; width: 17.833333333333%;
+					}
+
+
+		#sidebar {
+			margin: 0 auto; width: 17.833333333333%; float: left;
+		}
+		#mainContent {
+			margin: 0 auto; width: 80.958333333333%; float: right;
+		}
+		/* li { margin-right: 35px;} */
+	}
+
+	/* !Large screens ----------- */
+	@media only screen
+	and (min-width : 1824px) {
+		#logo {
+			margin: 0 auto; width: 17.833333333333%;
+					}
+		#mainnav {
+			width: 17.833333333333%;
+			}
+
+
+		#mainContent {
+			margin: 0 auto; width: 80.958333333333%; float: right;
+		}
+
+
+	  @media  screen and (max-width: 1021px) {
+  /* #gallery img {
+  		width: 240px; height: 180px;
+  	}
+   */
+
+   }
+
+	/* !iPads (portrait and landscape) ----------- */
+   @media only screen
+   and (max-width: 840px)
+    {
+
+   	#logo {
+   		margin: 0 auto; width: 100%;
+   		background-position: center;
+   	}
+
+   .sideDivider { display: none;}
+   .bottomDivider { display: block; background-color: rgba(127,127,127,0.7); height: 12px; float: left; width: 100%; }
+   #about {
+   		float: left; width: 40%; padding: 0% 10% 0% 5%;
+   	}
+   	#flickr {
+   		float: right; width: 40%;
+   	}
+
+   	#mainContent {
+   		 margin: 0 auto; float: left; width: 100%;
+   	}
+    li { margin-right: 15px;   }
+   #gallery img {
+    		width: 300px; height: 226px;
+    	}
+   .topDivider {
+	   display: none;
+   }
+   .topDivider-Right {
+	  display: none;
+   }
+
+
+
+
+
+
+/* !MOBILE PHONES */
+   @media  screen and (max-width: 550px) {
+   	#logo {
+   		margin: 0 auto; width: 100%;
+   		background-position: center;
+   	}
+
+
+   	#mainContent {
+   	 margin: 0 auto; float: left; width: 100%;
+   	}
+   	#sidebar {
+   	margin:  0 auto; width: 100%;
+   		  	}
+   	#about {
+   		float: left; width: 50%;
+   	}
+   	#flickr {
+   		float: right; width: 50%;
+   	}
+
+
+
+
+
+   }
+
+   /*/mediaquery*/
+
+   /* ==|== non-semantic helper classes ========================================
+      Please define your styles before this section.
+      ========================================================================== */
+
+   /* For image replacement */
+   .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+   .ir br { display: none; }
+
+   /* Hide from both screenreaders and browsers: h5bp.com/u */
+   .hidden { display: none !important; visibility: hidden; }
+
+   /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+   .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+   /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+   .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+   /* Hide visually and from screenreaders, but maintain layout */
+   .invisible { visibility: hidden; }
+
+   /* Contain floats: h5bp.com/q */
+   .clearfix:before, .clearfix:after { content: ""; display: table; }
+   .clearfix:after { clear: both; }
+   .clearfix { *zoom: 1; }
+
+
+
+   /* ==|== print styles =======================================================
+      Print styles.
+      Inlined to avoid required HTTP connection: h5bp.com/r
+      ========================================================================== */
+
+   @media print {
+     * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+     a, a:visited { text-decoration: underline; }
+     a[href]:after { content: " (" attr(href) ")"; }
+     abbr[title]:after { content: " (" attr(title) ")"; }
+     .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+     pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+     thead { display: table-header-group; } /* h5bp.com/t */
+     tr, img { page-break-inside: avoid; }
+     img { max-width: 100% !important; }
+     @page { margin: 0.5cm; }
+     p, h2, h3 { orphans: 3; widows: 3; }
+     h2, h3 { page-break-after: avoid; }
+   }
+
+

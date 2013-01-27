@@ -369,7 +369,7 @@ td { vertical-align: top; }
    #logo img { max-width: 100%; height: auto;}
    .sideDivider { width: 100%; float: left; display: block; background-color: #949494; background-color: rgba(127,127,127,0.7); height: 12px;   }
    #about  {
-   font-family: 'museo_slab_500regular'; font-size: 1.3em; color: #b7b7b7;  width: 50%;  /* background-color: #4d4949; */
+   font-family: 'museo_slab_500regular'; font-size: 1.3em; color: #b7b7b7;  width: 40%;  /* background-color: #4d4949; */
    }
    #about h3{
 	  font-family: 'museo_slab_500regular'; font-size: 1.5em; font-weight: normal; color: #b7b7b7; padding: 0px; margin: 0px;
